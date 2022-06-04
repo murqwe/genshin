@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Тайват</title>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/btn.css" />
+		<link rel="stylesheet" href="../css/input.css" />
+		<link rel="stylesheet" href="../css/tayvat.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+
+		<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+	</head>
+
+	<body class="container-fluid">
+		<header class="header">
+			<nav class="navbar navbar-expand-lg header__navbar">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img class="navbar-brand__img" src="/img/logo.png" alt="логотип" />
+						Genshin Impact
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Переключатель навигации"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Информация
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li>
+										<a class="dropdown-item" href="#">Действие</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Другое действие</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Что-то еще здесь</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="features.html"
+									>Особенности</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Манга</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="characters.html">Персонажи</a>
+							</li>
+						</ul>
+						<div class="d-flex">
+							<a class="nav-link" href="log-in.html">Вход</a>
+							<a class="btn btn-default" href="register.html">Регистрация</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section class="tayvat">
+			<div class="tayvat__header">
+				<div class="tayvat__header-content">
+					<h1 class="tayvat__title">Путешествия по Тайвату</h1>
+					<p class="tayvat__text">
+						Тейват — фантастический мир, где в гармонии существуют семь элементов. В
+						далёком прошлом могущественные Архонты научили людей управлять стихиями.
+						<br />
+						<br />
+						С помощью этих навыков люди смогли превратить безжизненную пустыню в свой
+						дом. 500 лет назад крах древней цивилизации перевернул весь мир с ног на
+						голову...
+						<br />
+						<br />
+						И хоть было давно, мир до сих пор не до конца оправился от катастрофы.
+					</p>
+				</div>
+				<img src="../img/tayvat/паймон.png" alt="паймон" />
+			</div>
+
+			<div class="tayvat__items">
+				<div class="row">
+					<div class="col-4">
+						<a
+							class="tayvat__item"
+							href="https://genshin.hoyoverse.com/ru/town/mondstadt?mute=1&noteId=1345"
+							target="_blank"
+						>
+							<div class="tayvat__img">
+								<img src="../img/tayvat/mond.png" alt="Венти" />
+								<div class="tayvat__name">Мондштадт</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-4">
+						<a
+							class="tayvat__item"
+							href="https://genshin.hoyoverse.com/ru/town/liyue?mute=1&noteId=2026"
+							target="_blank"
+						>
+							<div class="tayvat__img">
+								<img src="../img/tayvat/li yue.png" alt="1 глава" />
+								<div class="tayvat__name">Ли Юэ</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-4">
+						<a
+							class="tayvat__item"
+							href="https://genshin.hoyoverse.com/ru/town/inazuma?mute=1&noteId=16726"
+							target="_blank"
+						>
+							<div class="tayvat__img">
+								<img src="../img/tayvat/inazuma.png" alt="1 глава" />
+								<div class="tayvat__name">Инадзума</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<a class="navbar-brand" href="#">
+				<img class="navbar-brand__img" src="/img/logo.png" alt="логотип" />
+				Genshin Impact
+			</a>
+			<ul class="footer__nav">
+				<li class="nav-item">
+					<a class="nav-link" target="_blank" href="https://genshin.hoyoverse.com/ru/home"
+						>Перейти на официальный сайт
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+.promo-hero {
+	padding: 20px 70px 0px !important;
+}
+
+.promo-hero__name {
+	color: #fff;
+	font-size: 50px;
+	font-style: italic;
+	margin-bottom: 15px;
+}
+
+.promo-hero__rare i {
+	color: #ffcb3a;
+	font-size: 21px;
+	padding-right: 0.25rem;
+	text-shadow: 0 0 1px #302508;
+}
+
+.promo-hero__img {
+	max-width: 600px;
+}
+
+.promo-hero__text {
+	color: #fff;
+	font-size: 20px;
+	margin-left: 150px;
+}
+
+.promo-hero__text.center {
+	margin-left: 77px;
+	text-align: center;
+}
+
+.promo-hero__video iframe {
+	width: 490px;
+	height: 350px;
+	border-radius: 18px;
+	margin-left: 50px;
+}
+
+.promo-hero__video {
+	display: flex;
+	justify-content: end;
+}

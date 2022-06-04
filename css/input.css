@@ -1,0 +1,24 @@
+.input-group {
+	min-width: 300px;
+}
+
+.form-control {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #707070;
+	color: #fff;
+	padding: 5px 0px;
+	padding-right: 10px;
+	border-radius: 0;
+}
+
+.form-control::placeholder {
+	color: #fff;
+}
+
+.input-group-text {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #707070;
+	border-radius: 0;
+}

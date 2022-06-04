@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Персонажи</title>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/btn.css" />
+		<link rel="stylesheet" href="../css/input.css" />
+		<link rel="stylesheet" href="../css/characters.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/modal.css" />
+		<link rel="stylesheet" href="../css/promo-hero.css" />
+
+		<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+	</head>
+
+	<body class="container-fluid">
+		<header class="header">
+			<nav class="navbar navbar-expand-lg header__navbar">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img class="navbar-brand__img" src="/img/logo.png" alt="логотип" />
+						Genshin Impact
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Переключатель навигации"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Информация
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li>
+										<a class="dropdown-item" href="#">Действие</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Другое действие</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Что-то еще здесь</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="features.html"
+									>Особенности</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="manga.html">Манга</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Персонажи</a>
+							</li>
+						</ul>
+						<div class="d-flex">
+							<a class="nav-link" href="log-in.html">Вход</a>
+							<a class="btn btn-default" href="register.html">Регистрация</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section class="characters">
+			<div class="characters__header">
+				<h1 class="characters__title">Все персонажи Genshin Impact</h1>
+				<h3 class="characters__subtitle">Играбельные персонажи</h3>
+			</div>
+
+			<div class="characters__items">
+				<div class="row">
+					<div class="col-4">
+						<div
+							class="characters__item"
+							data-bs-toggle="modal"
+							data-bs-target="#IterModal"
+						>
+							<div class="characters__img">
+								<img
+									src="../img/characters/Traveler.webp"
+									alt="путешественник анемо"
+								/>
+							</div>
+							<h4 class="characters__name">Итер/Люмин</h4>
+							<div class="characters__text">
+								Персонаж которым мы начинаем игру и знакомимся с основными ее
+								механиками.
+							</div>
+							<div class="characters__placeholder">Открыть</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+						<div
+							class="characters__item"
+							data-bs-toggle="modal"
+							data-bs-target="#BarbaraModal"
+						>
+							<div class="characters__img purple">
+								<img src="../img/characters/barbara.webp" alt="барбара" />
+							</div>
+							<h4 class="characters__name">
+								Барбара
+								<img
+									class="characters__element"
+									src="../img/elements/Hydro.png"
+									alt=""
+								/>
+							</h4>
+							<div class="characters__text">
+								Эта звездочка Монштадта прекрасно дополнит вашу группу и с легкостью
+								залечит раны вашего мейн дд.
+							</div>
+							<div class="characters__placeholder hydro">Открыть</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+						<div
+							class="characters__item"
+							data-bs-toggle="modal"
+							data-bs-target="#BennetModal"
+						>
+							<div class="characters__img purple">
+								<img src="../img/characters/bennett.webp" alt="беннет" />
+							</div>
+							<h4 class="characters__name">
+								Беннет <img src="../img/elements/Pyro.png" alt="" />
+							</h4>
+							<div class="characters__text">
+								Молодой искатель приключений из Мондштадта, известный своим
+								чудовищным невезением.
+							</div>
+							<div class="characters__placeholder pyro">Открыть</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-3">
+					<div class="col-4">
+						<div
+							class="characters__item"
+							data-bs-toggle="modal"
+							data-bs-target="#NingguangModal"
+						>
+							<div class="characters__img purple">
+								<img src="../img/characters/ningguang.webp" alt="Нин Гуан" />
+							</div>
+							<h4 class="characters__name">
+								Нин Гуан <img src="../img/elements/Geo.png" alt="" />
+							</h4>
+							<div class="characters__text">
+								Символ Ли Юэ, сильная и местами загадочная женщина. Ее улыбка
+								заставит растаять любого, а вот врагам она не сулит ничего хорошего.
+							</div>
+							<div class="characters__placeholder geo">Открыть</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+						<div
+							class="characters__item"
+							data-bs-toggle="modal"
+							data-bs-target="#SaharozaModal"
+						>
+							<div class="characters__img purple">
+								<img src="../img/characters/sucrose.webp" alt="Сахароза" />
+							</div>
+							<h4 class="characters__name">
+								Сахароза <img src="../img/elements/Anemo.png" alt="" />
+							</h4>
+							<div class="characters__text">
+								Алхимик с ненасытным любопытством к миру и всему, что в нём
+								находится.
+							</div>
+							<div class="characters__placeholder anemo">Открыть</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+						<div
+							class="characters__item"
+							data-bs-toggle="modal"
+							data-bs-target="#KeyaModal"
+						>
+							<div class="characters__img purple">
+								<img src="../img/characters/kaeya.webp" alt="Кэйа" />
+							</div>
+							<h4 class="characters__name">
+								Кэйа <img src="../img/elements/Cryo.png" alt="" />
+							</h4>
+							<div class="characters__text">
+								В Ордо Фавониус Кэйа является доверенным помощником действующего
+								командира Джинн.
+							</div>
+							<div class="characters__placeholder cryo">Открыть</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-3">
+					<div class="col-4">
+						<div
+							class="characters__item"
+							data-bs-toggle="modal"
+							data-bs-target="#BaidouModal"
+						>
+							<div class="characters__img purple">
+								<img src="../img/characters/baidou.webp" alt="Бэй Доу" />
+							</div>
+							<h4 class="characters__name">
+								Бэй Доу <img src="../img/elements/Electro.png" alt="" />
+							</h4>
+							<div class="characters__text">
+								Капитан вооруженного корабля, сильная и независимая, с искрой в
+								глазах, другой такой героини вы точно не найдете.
+							</div>
+							<div class="characters__placeholder electro">Открыть</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+						<div
+							class="characters__item"
+							data-bs-toggle="modal"
+							data-bs-target="#SaharozaModal"
+						>
+							<div class="characters__img purple">
+								<img src="../img/characters/sucrose.webp" alt="Сахароза" />
+							</div>
+							<h4 class="characters__name">
+								Сахароза <img src="../img/elements/Anemo.png" alt="" />
+							</h4>
+							<div class="characters__text">
+								Алхимик с ненасытным любопытством к миру и всему, что в нём
+								находится.
+							</div>
+							<div class="characters__placeholder anemo">Открыть</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+						<div
+							class="characters__item"
+							data-bs-toggle="modal"
+							data-bs-target="#KeyaModal"
+						>
+							<div class="characters__img purple">
+								<img src="../img/characters/kaeya.webp" alt="Кэйа" />
+							</div>
+							<h4 class="characters__name">
+								Кэйа <img src="../img/elements/Cryo.png" alt="" />
+							</h4>
+							<div class="characters__text">
+								В Ордо Фавониус Кэйа является доверенным помощником действующего
+								командира Джинн.
+							</div>
+							<div class="characters__placeholder cryo">Открыть</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Модальное окно Дилюка -->
+		<div
+			class="modal modal-dark fade"
+			id="DilucModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close-white btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Закрыть"
+						></button>
+					</div>
+					<div class="modal-body promo-hero">
+						<div class="row">
+							<div class="col-6">
+								<div class="promo-hero__header">
+									<h1 class="promo-hero__name">Дилюк</h1>
+									<span class="promo-hero__rare">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+
+								<img class="promo-hero__img" src="../img/heros/дилюк.png" alt="" />
+							</div>
+
+							<div class="col-6"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно Итера-->
+		<div
+			class="modal modal-dark fade"
+			id="IterModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-xxl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close-white btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Закрыть"
+						></button>
+					</div>
+					<div class="modal-body promo-hero">
+						<div class="row">
+							<div class="col-6">
+								<div class="promo-hero__header">
+									<h1 class="promo-hero__name">Итер/Люмин</h1>
+									<span class="promo-hero__rare">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+
+								<img
+									class="promo-hero__img"
+									src="../img/heros/итер и люмин.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="col-6 d-flex align-items-center">
+								<p class="promo-hero__text">
+									Играбельные персонажи и протагонист Genshin Impact. В начале
+									игры близнецы, брат и сестра, путешествующие по разным мирам,
+									попадают в ловушку Неизвестного Бога, которая захватывает одного
+									из близнецов и запечатывает силы другого, оставляя их
+									выброшенными в Тейвате. На протяжении всей истории
+									Путешественника(цу) сопровождает Паймон.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно Барбары-->
+		<div
+			class="modal modal-dark fade"
+			id="BarbaraModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-xxl">
+				<div class="modal-content hydro">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close-white btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Закрыть"
+						></button>
+					</div>
+					<div class="modal-body promo-hero">
+						<div class="row">
+							<div class="col-6">
+								<div class="promo-hero__header">
+									<h1 class="promo-hero__name">Барбара</h1>
+									<span class="promo-hero__rare">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+
+								<img
+									class="promo-hero__img"
+									src="../img/heros/barbara.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="col-6">
+								<p class="promo-hero__text center">
+									Пастор Ордо Фавониус, а также сияющая звёздочка, любимая всеми в
+									Мондштадте. Жители Мондштадта больше привыкли к бардам, нежели к
+									звёздочкам, но они всё равно без ума от Барбары. Я в долгу перед
+									духом свободы этого города. — Барбара, о своей популярности.
+								</p>
+								<div class="promo-hero__video">
+									<iframe
+										src="https://www.youtube.com/embed/KtGerlD8f4A"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно Беннета-->
+		<div
+			class="modal modal-dark fade"
+			id="BennetModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-xxl">
+				<div class="modal-content pyro-light">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close-white btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Закрыть"
+						></button>
+					</div>
+					<div class="modal-body promo-hero">
+						<div class="row">
+							<div class="col-6">
+								<div class="promo-hero__header">
+									<h1 class="promo-hero__name">Беннет</h1>
+									<span class="promo-hero__rare">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+
+								<img class="promo-hero__img" src="../img/heros/bennet.png" alt="" />
+							</div>
+
+							<div class="col-6">
+								<p class="promo-hero__text center">
+									Незадачливый паренек именно такой каким кажется. Да это Беннет,
+									очень невезучий, но веселый и неунывающий персонаж. Его Пиро
+									отлично подходят для поддержки отряда, а взрывной характер точно
+									привнесет в вашу группу немного хаоса и неразберихи, разве это
+									плохо?
+								</p>
+
+								<div class="promo-hero__video">
+									<iframe
+										src="https://www.youtube.com/embed/gMkQrdMGwH8"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно Нин Гуан-->
+		<div
+			class="modal modal-dark fade"
+			id="NingguangModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-xxl">
+				<div class="modal-content geo">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close-white btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Закрыть"
+						></button>
+					</div>
+					<div class="modal-body promo-hero">
+						<div class="row">
+							<div class="col-6">
+								<div class="promo-hero__header">
+									<h1 class="promo-hero__name">Нин Гуан</h1>
+									<span class="promo-hero__rare">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+
+								<img class="promo-hero__img" src="../img/heros/" alt="" />
+							</div>
+
+							<div class="col-6">
+								<p class="promo-hero__text center">
+									Благодаря сильным Гео способностям Нин Гуан с легкостью
+									расправляется как самыми толстыми боссами игры. На данным момент
+									самый сильный дд персонаж Гео стихии, поэтому не упустите свой
+									шанс и прогуляйтесь по гавани Ли Юэ вместе с ней.
+								</p>
+
+								<div class="promo-hero__video">
+									<iframe
+										src="https://www.youtube.com/embed/uS0nrWOsIlE"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно Бей Доу-->
+		<div
+			class="modal modal-dark fade"
+			id="BaidouModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-xxl">
+				<div class="modal-content electro">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close-white btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Закрыть"
+						></button>
+					</div>
+					<div class="modal-body promo-hero">
+						<div class="row">
+							<div class="col-6">
+								<div class="promo-hero__header">
+									<h1 class="promo-hero__name">Бей Доу</h1>
+									<span class="promo-hero__rare">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+
+								<img class="promo-hero__img" src="../img/heros/beidou.png" alt="" />
+							</div>
+
+							<div class="col-6">
+								<p class="promo-hero__text center">
+									Капитан флота Южного Креста, пользующийся у жителей Ли Юэ
+									всеобщим уважением.Рассказывают, что её мощь способна
+									раскалывать горы и раздвигать моря. Другие говорят, что она
+									одним взмахом меча призывает гром и молнию. А третьи утверждают,
+									что даже самые кошмарные морские чудовища боятся Бэй Доу.
+								</p>
+
+								<div class="promo-hero__video">
+									<iframe
+										src="https://www.youtube.com/embed/PpJQ8gbgz7Y"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно Сахарозы-->
+		<div
+			class="modal modal-dark fade"
+			id="SaharozaModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-xxl">
+				<div class="modal-content anemo">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close-white btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Закрыть"
+						></button>
+					</div>
+					<div class="modal-body promo-hero">
+						<div class="row">
+							<div class="col-6">
+								<div class="promo-hero__header">
+									<h1 class="promo-hero__name">Сахароза</h1>
+									<span class="promo-hero__rare">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+
+								<img
+									class="promo-hero__img"
+									src="../img/heros/saharoza.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="col-6">
+								<p class="promo-hero__text center">
+									Хоть и Сахароза — ассистентка гениального Альбедо, направления
+									их исследований разительно отличаются. Превращение существующей
+									жизни и придание миру разнообразия её интересует куда больше,
+									чем изучение природы алхимии и создания новых видов. Несмотря на
+									свой юный возраст, она уже добилась поразительных результатов.
+									Например, поливая рассаду цветков-сахарков особым зельем, она
+									повысила сбор нектара на 70%.
+								</p>
+
+								<div class="promo-hero__video">
+									<iframe
+										src="https://www.youtube.com/embed/RYlqpA7VSpY"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Модальное окно Кэйи-->
+		<div
+			class="modal modal-dark fade"
+			id="KeyaModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-xxl">
+				<div class="modal-content cryo">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close-white btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Закрыть"
+						></button>
+					</div>
+					<div class="modal-body promo-hero">
+						<div class="row">
+							<div class="col-6">
+								<div class="promo-hero__header">
+									<h1 class="promo-hero__name">Кэйа</h1>
+									<span class="promo-hero__rare">
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</span>
+								</div>
+
+								<img class="promo-hero__img" src="../img/heros/keya.png" alt="" />
+							</div>
+
+							<div class="col-6">
+								<p class="promo-hero__text center">
+									Мыслитель из «Ордо Фавониус» с несколько экзотической
+									внешностью. Капитан кавалерии. Кэйа Олберич — воспитанник клана
+									Рагнвиндр, известных в Мондштадте винодельных магнатов. Все в
+									Мондштадте любят Кэйю, но никто не знает, в чём секрет этого
+									остроумного и очаровательного рыцаря...
+								</p>
+
+								<div class="promo-hero__video">
+									<iframe
+										src="https://www.youtube.com/embed/M2blSYJ6hrE"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<a class="navbar-brand" href="#">
+				<img class="navbar-brand__img" src="/img/logo.png" alt="логотип" />
+				Genshin Impact
+			</a>
+			<ul class="footer__nav">
+				<li class="nav-item">
+					<a class="nav-link" target="_blank" href="https://genshin.hoyoverse.com/ru/home"
+						>Перейти на официальный сайт
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

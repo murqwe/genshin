@@ -1,0 +1,49 @@
+.modal-dark .modal-content {
+	background-color: black;
+	border-width: 2px;
+	border-radius: 12px;
+	box-shadow: 0 0px 25px 0 rgb(231, 252, 253);
+	border-color: rgb(231, 252, 253);
+}
+
+.modal-dark .modal-content.pyro {
+	box-shadow: 0 0px 25px 0 rgba(202, 48, 21.7);
+	border-color: rgb(202, 48, 21);
+}
+
+.modal-dark .modal-content.pyro-light {
+	box-shadow: 0 0px 25px 0 rgba(254, 167, 111);
+	border-color: rgba(216, 98, 35);
+}
+
+.modal-dark .modal-content.hydro {
+	box-shadow: 0 0px 25px 0 rgba(11, 215, 247);
+	border-color: rgba(51, 143, 199);
+}
+
+.modal-dark .modal-content.cryo {
+	box-shadow: 0 0px 25px 0 rgba(171, 198, 255);
+	border-color: rgba(51, 143, 199);
+}
+
+.modal-dark .modal-content.electro {
+	box-shadow: 0 0px 25px 0 rgba(211, 169, 250);
+	border-color: rgba(180, 120, 227);
+}
+
+.modal-dark .modal-content.anemo {
+	box-shadow: 0 0px 25px 0 rgba(197, 232, 203);
+	border-color: rgba(87, 179, 152);
+}
+
+.modal-dark .modal-header {
+	border-bottom: none;
+}
+
+.modal-dark .modal-footer {
+	border-top: none;
+}
+
+.modal-xxl {
+	max-width: 1300px;
+}

@@ -1,0 +1,37 @@
+.btn-default {
+	background-color: #306ef7;
+	color: #fff;
+	border-radius: 8px;
+}
+
+.btn-default:hover {
+	background-color: #1f48a0;
+	color: #fff;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.btn-outline-icon {
+	background-color: transparent;
+	color: #fff;
+	border-color: #fff;
+	border-width: 2px;
+	font-size: 15px;
+	padding: 10px 65px;
+	display: flex;
+	border-radius: 8px;
+	max-width: 330px;
+	min-width: 330px;
+}
+
+.btn-outline-icon img {
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+}
+
+.btn-outline-icon + .btn-outline-icon {
+	margin-left: 50px;
+}
